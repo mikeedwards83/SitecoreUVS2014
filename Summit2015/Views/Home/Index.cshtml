@@ -1,0 +1,26 @@
+﻿@inherits Glass.Mapper.Sc.Web.Mvc.GlassView<Summit2015.Models.Form>
+
+
+<h1>
+    @Editable(Model,x =>x.Page.Title)  - Rocks on Glass
+</h1>
+
+@Editable(Model, x=>x.Page.Text) 
+
+@using (Html.BeginForm())
+{
+    <p>
+        @Html.LabelFor(x=>x.Name)
+        @Html.TextBoxFor(x=>x.Name)
+    </p>
+    
+    <input type="submit" value="Send Tweet"/>
+    
+}
+
+@if (Model.Completed)
+{
+    <p>
+        Thanks for sending a tweet
+    </p>
+}

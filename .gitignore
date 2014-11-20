@@ -1,0 +1,6 @@
+Libs/Sitecore/
+*crunchsolution*
+Summit2015/bin
+Summit2015/obj
+Summit2015.Tests/obj/
+Summit2015.Tests/bin/
